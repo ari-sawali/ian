@@ -206,7 +206,7 @@ def SEND_MESSAGE(op):
                     contact = client.getContact(key)
                     sendMessage(msg.to, ""+contact.displayName+"'s contact")
                 if msg.text == "Time":
-                    sendMessage(msg.to, "Current time is " + datetime.datetime.today().strftime('Tahun %Y Bulan%m Hari%d %H:%M:%S') + "is")
+                    sendMessage(msg.to, "Waktu Sekarang " + datetime.datetime.today().strftime('Tahun %Y Bulan %m Tanggal %d %H:%M:%S'))
                 if msg.text == "Gift":
                     sendMessage(msg.to, text="gift sent", contentMetadata= {'PRDID': 'a0768339-c2d3-4189-9653-2909e9bb6f58','PRDTYPE': 'THEME','MSGTPL': '5'}, contentType=9)
                 if msg.text == "Set":
